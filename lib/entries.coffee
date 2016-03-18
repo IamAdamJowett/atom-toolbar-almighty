@@ -52,7 +52,15 @@ module.exports = [
     tooltip: 'Git switch branch'
     dependency: 'git-plus'
     callback: 'git-plus:checkout'
-    icon: 'fa-code-fork'
+    icon: 'fork-repo'
+    iconset: 'ion'
+  },
+  {
+    type: 'button'
+    tooltip: 'Merge Conflicts'
+    dependency: 'merge-conflicts'
+    callback: 'merge-conflicts:detect'
+    icon: 'code-fork'
     iconset: 'fa'
   },
   {
@@ -84,14 +92,6 @@ module.exports = [
   },
   {
     type: 'spacer'
-  },
-  {
-    type: 'button'
-    tooltip: 'Merge Conflicts'
-    dependency: 'merge-conflicts'
-    callback: 'merge-conflicts:detect'
-    icon: 'code-fork'
-    iconset: 'fa'
   },
   {
     type: 'button'
