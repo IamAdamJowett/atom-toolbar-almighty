@@ -44,7 +44,15 @@ module.exports = [
     tooltip: 'Git add all and commit'
     dependency: 'git-plus'
     callback: 'git-plus:add-all-and-commit'
-    icon: 'add'
+    icon: 'plus'
+    iconset: 'fa'
+  },
+  {
+    type: 'button'
+    tooltip: 'Git switch branch'
+    dependency: 'git-plus'
+    callback: 'git-plus:checkout'
+    icon: 'fa-code-fork'
     iconset: 'fa'
   },
   {
