@@ -21,20 +21,34 @@ module.exports = [
     iconset: 'ion'
   },
   {
+    type: 'spacer'
+  },
+  {
     type: 'button'
-    tooltip: 'Git Control'
-    dependency: 'git-control'
-    callback: 'git-control:toggle'
-    icon: 'bullseye'
+    tooltip: 'Git Push'
+    dependency: 'git-plus'
+    callback: 'git-plus:push'
+    icon: 'cloud-upload'
     iconset: 'fa'
   },
   {
     type: 'button'
-    tooltip: 'Git Projects'
-    dependency: 'git-projects'
-    callback: 'git-projects:toggle'
-    icon: 'git'
+    tooltip: 'Git Pull'
+    dependency: 'git-plus'
+    callback: 'git-plus:pull'
+    icon: 'cloud-download'
     iconset: 'fa'
+  },
+  {
+    type: 'button'
+    tooltip: 'Git add all and commit'
+    dependency: 'git-plus'
+    callback: 'git-plus:add-all-and-commit'
+    icon: 'add'
+    iconset: 'fa'
+  },
+  {
+    type: 'spacer'
   },
   {
     type: 'button'
