@@ -74,6 +74,14 @@ module.exports = [
     icon: 'file-submodule'
   },
   {
+    type: 'button'
+    tooltip: 'Show To-Do\'s'
+    dependency: 'todo-show'
+    callback: 'todo-show:find-in-project'
+    icon: 'check-square'
+    iconset: 'fa'
+  },
+  {
     type: 'spacer'
   },
   {
