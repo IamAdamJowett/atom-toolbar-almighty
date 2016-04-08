@@ -64,6 +64,14 @@ module.exports = [
     iconset: 'fa'
   },
   {
+    type: 'button'
+    tooltip: 'Git diff timeline'
+    dependency: 'git-time-machine'
+    callback: 'git-time-machine:toggle'
+    icon: 'clock-o'
+    iconset: 'fa'
+  },
+  {
     type: 'spacer'
   },
   {
